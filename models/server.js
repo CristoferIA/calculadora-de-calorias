@@ -5,6 +5,7 @@ const { db } = require('../database/db');
 const { alimentosRouter } = require('../routes/alimentos.router');
 const globalErrorHandler = require('../controllers/error.controller');
 const initModel = require('./init.model');
+const AppError = require('../utils/AppErr');
 
 class Server {
   constructor() {
